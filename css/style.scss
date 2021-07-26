@@ -1,0 +1,406 @@
+@import "./_sidenav";
+
+:root{
+    --pink:pink;
+    --darker-pink:#ff9dab;
+    --blueviolet:blueviolet;
+    --white:white;
+    --whitesmoke:whitesmoke;
+    --blackish:rgba(73, 68, 68, 0.979);
+    --black:black;
+    --grey:grey;
+}
+
+*{
+    font-family: 'Fahkwang', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#hero{
+    min-height: 110vh;
+    background-image: url("../images/bckg.jpg");
+    background-position: center;
+    background-size: cover;
+
+   
+    /*Navigation*/
+    .navbar{
+        height: 10vh;
+        width: 100%;
+
+        nav{
+            .nav-links{
+                display: flex;
+                float: right;
+
+                li{
+                    list-style: none;
+                }
+
+                a{
+                    color: var(--black);
+                    text-decoration: none;
+                    font-size: 20px;
+                    margin-left: 30px;
+                }
+            }
+        }
+
+    }
+
+    //hero content
+    .hero-content{
+        color: var(--white);
+        display: block;
+        margin-top: 10%;
+
+
+        h1{
+            font-size: 60px;
+        }
+
+        h2{
+            font-family: 'Zen Loop', cursive;
+        }
+
+        .btn{
+            background: var(--pink);
+            padding:15px;
+
+            a{
+                text-decoration: none;
+                color: var(--white);
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+/*---------------------------------------------------------ABOUT-----------------------------------------------------------------*/
+#about{
+    padding-top: 70px;
+    min-height: 65vh;
+
+    .about-text{
+        text-align: center;
+
+        p{
+            font-family: 'Zen Loop', cursive;
+        }
+    }
+
+    .box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        .about-img{
+            flex-wrap: wrap;
+            width: 90%;
+            height: 40vh;
+        }
+
+        p{
+            padding:0 30px;
+        }
+    }
+    
+}
+/*------------------------------------------------------------services btn click------------------------------------------------------------*/
+#services{
+    padding-top:70px;
+    min-height: 45vh;
+    background-image: url('../images/service-img.jpg');
+    background-position: center;
+    background-size: cover;
+
+    .service-text{
+        text-align: center;
+        p{
+            font-family: 'Zen Loop', cursive;
+        }
+    }
+
+    .service-content{
+        text-align: center;
+    }
+
+}
+/*-----------------------------------------------------Service Section----------------------------------------------------------------------*/
+#myServices{
+    min-height: 120vh;
+    background-color: var(--darker-pink);
+    
+    /*Navigation*/
+    .navbar{
+        height: 10vh;
+        width: 100%;
+
+        nav{
+            .nav-links{
+                display: flex;
+                float: right;
+
+                li{
+                    list-style: none;
+                }
+
+                a{
+                    color: var(--black);
+                    text-decoration: none;
+                    font-size: 20px;
+                    margin-left: 30px;
+                }
+            }
+        }
+
+    }
+
+    //services box
+    .title{
+        text-align: center;
+        color: var(--whitesmoke);
+    }
+
+    .service-cont{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 40px;
+
+        .service-box-1
+        {
+            background-color: var(--whitesmoke);
+            width: 320px;
+            padding: 15px;
+            margin-bottom: 50px;
+    
+            .img{
+                text-align: center;
+            }
+
+            .waxing{
+                width: 240px;
+            }
+
+    
+            .descript{
+                text-align: center;
+    
+                h3{
+                    font-family: 'Zen Loop', cursive;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color:var(--blueviolet);
+                }
+            }
+    
+        }
+
+    }
+
+   
+}
+/*--------------------------------------------------------TESTIMONIALS-----------------------------------------------------------*/
+
+
+/*-----------------------------------------------------Gallery-------------------------------------------------------------------*/
+#gallery{
+
+    background-image: url("/images/gallery_bg.jpg");
+    background-position: center;
+    background-size: cover;
+
+    /*Navigation*/
+    .navbar{
+        height: 10vh;
+        width: 100%;
+
+        nav{
+            .nav-links{
+                display: flex;
+                float: right;
+
+                li{
+                    list-style: none;
+                }
+
+                a{
+                    color: var(--black);
+                    text-decoration: none;
+                    font-size: 20px;
+                    margin-left: 30px;
+                }
+            }
+        }
+
+    }
+
+    .gallery-images{
+        margin: 10px 120px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            transition: 1s;
+	        padding: 12px;
+	        width: 200px;
+        }
+
+        img:hover{
+            transform: scale(1.2);
+        }
+    }
+}
+
+/*---------------------------------------------------------CONTACT ME-------------------------------------------------------------*/
+#contact{
+    padding-top: 70px;
+    min-height: 80vh;
+    background-color: var(--black);
+
+    .dev,.social-icon{
+        text-align: center;
+        color: var(--whitesmoke);
+    }
+
+
+    .additional-info{
+        color: var(--whitesmoke);
+
+    }
+
+    .social-icon{
+        padding:20px 0;
+        font-size: 40px;
+
+        i{
+            color: var(--pink);
+        }
+
+        i:hover{
+            color: var(--grey);
+        }
+    }
+
+    .contact-content{
+
+        text-align: center;
+
+
+        #name,#emailaddress,#subject
+        {
+            border: none;
+            outline: none;
+            background-color:transparent;
+            border-bottom: 1px solid var(--blackish);
+            color: var(--whitesmoke);
+            width: 30%;
+        }
+
+        #subject{
+            width: 50%;
+            margin-top: 20px;
+        }
+
+        #name{
+            margin-right: 45px;
+        }
+
+        #submit-btn{
+            margin: 20px 0;
+            color: var(--black);
+            background-color: var(--pink);
+            border: none;
+        }
+    }
+}
+
+/*--------------------------------------------------------MEDIA QUERY-------------------------------------------------------------*/
+@media screen and (max-width:1200px) 
+{
+
+    //hero
+
+    /*Navigation*/
+    .navbar{
+        height: 10vh;
+        width: 100%;
+
+        nav{
+            .nav-links{
+                display: flex;
+                float: right;
+
+                li{
+                    list-style: none;
+                }
+
+                a{
+                    color: var(--black);
+                    text-decoration: none;
+                    font-size: 20px;
+                    margin-left: 30px;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:768px)
+{
+    
+    @include SideNav();
+
+    //about
+    .box{
+        text-align: center;
+        flex-direction: column;
+
+        p{
+            margin-top: 20px;
+        }
+    }
+
+    //gallery
+    #gallery{
+        .gallery-images{
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                width: 170px;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) , screen and (orientation: landscape)
+{
+    //sidenav
+    @include SideNav();
+
+}
+
+
+@media screen and (max-width:280px)
+{
+    #gallery{
+        .gallery-images{
+            img{
+                width: 124px;
+                padding: 10px;
+            }
+        
+        }
+    }
+}
