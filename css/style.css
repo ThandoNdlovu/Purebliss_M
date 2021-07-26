@@ -210,7 +210,7 @@ html {
 /*--------------------------------------------------------TESTIMONIALS-----------------------------------------------------------*/
 /*-----------------------------------------------------Gallery-------------------------------------------------------------------*/
 #gallery {
-  background-image: url("/images/gallery_bg.jpg");
+  background-image: url("../images/gallery_bg.jpg");
   background-position: center;
   background-size: cover;
   /*Navigation*/
